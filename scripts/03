@@ -1,0 +1,32 @@
+#!/bin/bash
+
+height=$(tput lines)
+columns="$(tput cols)"
+columns="$(( (${#line} + columns) / 2))"
+clear
+for counter in {1..20}
+do
+	echo '\n'
+done
+printf "%*s\n" $columns "Enter name of folder :"; read FOLDER
+clear
+mkdir $FOLDER
+cd $FOLDER
+git init .
+echo "a.out
+*/a.out
+*.o
+*/*.o
+*.swp
+*/*.swp
+ft_ls
+*test*
+*.out" > .gitignore
+echo "rmerien" > auteur
+mkdir srcs includes
+echo "." > srcs/.init
+echo "." > includes/.init
+git add --all
+git commit -m "init"
+git push origin master
+rm */.init
