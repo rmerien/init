@@ -1,4 +1,5 @@
 #!/bin/bash
 
 echo Enter name of user to be deleted :; read NAME
-userdel -f $NAME
+pkill -9 -u $NAME
+userdel -rf $NAME

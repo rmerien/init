@@ -1,1 +1,1 @@
-sudo service ssh status
+sudo service ssh restart

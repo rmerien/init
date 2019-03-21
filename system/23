@@ -1,3 +1,2 @@
-/etc/ssh/sshd_config. Append the following to it:
-
-AllowUsers username	#Allowing the user on the SSH, can also be used as AllowUsers username@ip to make the connection more secure.
+en session ssh : ssh user@ip
+graphique : log out, log in the new user account

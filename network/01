@@ -1,1 +1,1 @@
-networksetup -listallhardwareports | grep "Hardware" | cut -c 16-40
+ifconfig -l

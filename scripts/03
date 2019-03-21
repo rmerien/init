@@ -6,7 +6,7 @@ columns="$(( (${#line} + columns) / 2))"
 clear
 for counter in {1..20}
 do
-	echo '\n'
+	echo ''
 done
 printf "%*s\n" $columns "Enter name of folder :"; read FOLDER
 clear
